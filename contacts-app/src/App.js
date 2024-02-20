@@ -11,6 +11,7 @@ import SiteFooter from './components/Common/SiteFooter';
 import HomePage from './components/home/HomePage';
 import LoginPage from './components/auth/LoginPage';
 import RegisterPage from './components/auth/RegisterPage';
+import Contacts from './components/contacts/Contacts';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' exact={true} element={<HomePage />}/>
         <Route path ='/login' element={<LoginPage />} />
         <Route path ='/register' element={<RegisterPage />} />
+        <Route path='/contacts' element={<Contacts/>}  />
       </Routes>
       <SiteFooter/>
     </div>
